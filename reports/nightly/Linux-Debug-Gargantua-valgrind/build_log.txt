@@ -144,8 +144,8 @@
 [ 69%] Building CXX object src/bin/vorpastat/CMakeFiles/vorpastat.dir/main.cpp.o
 [ 69%] Building CXX object src/bin/vorpacomp/CMakeFiles/vorpacomp.dir/main.cpp.o
 [ 70%] Linking CXX executable ../../../bin/vorpacomp
-[ 70%] Built target vorpacomp
 [ 71%] Linking CXX executable ../../../bin/vorpastat
+[ 71%] Built target vorpacomp
 [ 72%] Building CXX object src/bin/geodump/CMakeFiles/geodump.dir/main.cpp.o
 [ 72%] Built target vorpastat
 [ 72%] Building CXX object src/bin/vorpalite/CMakeFiles/vorpalite.dir/main.cpp.o
@@ -202,8 +202,8 @@
 [ 91%] Building CXX object src/examples/geogram/compute_delaunay/CMakeFiles/compute_delaunay.dir/main.cpp.o
 [ 91%] Linking CXX executable ../../../bin/test_mesh_syntaxic_sugar
 [ 91%] Built target test_mesh_syntaxic_sugar
+[ 91%] Linking CXX executable ../../../../bin/compute_delaunay
 [ 92%] Building CXX object src/examples/geogram/compute_RVD/CMakeFiles/compute_RVD.dir/main.cpp.o
-[ 92%] Linking CXX executable ../../../../bin/compute_delaunay
 [ 92%] Built target compute_delaunay
 [ 93%] Building CXX object src/examples/geogram/compute_CSG/CMakeFiles/compute_CSG.dir/main.cpp.o
 [ 93%] Linking CXX executable ../../../../bin/compute_CSG
