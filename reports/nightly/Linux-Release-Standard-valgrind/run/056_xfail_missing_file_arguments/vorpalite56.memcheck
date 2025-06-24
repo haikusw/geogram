@@ -12,8 +12,8 @@
   <line>Command: /home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/bin/vorpalite</line>
 </preamble>
 
-<pid>11596</pid>
-<ppid>11421</ppid>
+<pid>11455</pid>
+<ppid>11275</ppid>
 <tool>memcheck</tool>
 
 <args>
