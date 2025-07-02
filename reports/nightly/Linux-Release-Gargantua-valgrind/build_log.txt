@@ -195,16 +195,16 @@
 [ 87%] Built target test_logger
 [ 88%] Building CXX object src/tests/test_geofile/CMakeFiles/test_geofile.dir/main.cpp.o
 [ 89%] Linking CXX executable ../../../bin/test_CDT_2d
-[ 89%] Linking CXX executable ../../../bin/test_geofile
 [ 89%] Built target test_CDT_2d
 [ 90%] Building CXX object src/tests/test_mesh_syntaxic_sugar/CMakeFiles/test_mesh_syntaxic_sugar.dir/main.cpp.o
+[ 90%] Linking CXX executable ../../../bin/test_geofile
 [ 90%] Built target test_geofile
 [ 91%] Building CXX object src/examples/geogram/compute_delaunay/CMakeFiles/compute_delaunay.dir/main.cpp.o
-[ 91%] Linking CXX executable ../../../../bin/compute_delaunay
 [ 91%] Linking CXX executable ../../../bin/test_mesh_syntaxic_sugar
-[ 91%] Built target compute_delaunay
+[ 91%] Built target test_mesh_syntaxic_sugar
+[ 91%] Linking CXX executable ../../../../bin/compute_delaunay
 [ 92%] Building CXX object src/examples/geogram/compute_RVD/CMakeFiles/compute_RVD.dir/main.cpp.o
-[ 92%] Built target test_mesh_syntaxic_sugar
+[ 92%] Built target compute_delaunay
 [ 93%] Building CXX object src/examples/geogram/compute_CSG/CMakeFiles/compute_CSG.dir/main.cpp.o
 [ 93%] Linking CXX executable ../../../../bin/compute_CSG
 [ 93%] Built target compute_CSG
@@ -215,11 +215,11 @@
 [ 94%] Linking CXX executable ../../../../bin/opennl_LSCM
 [ 94%] Built target opennl_LSCM
 [ 94%] Building CXX object src/examples/geogram/manifold_harmonics/CMakeFiles/manifold_harmonics.dir/main.cpp.o
-[ 96%] Linking CXX executable ../../../../bin/opennl_mesh_smooth
+[ 95%] Linking CXX executable ../../../../bin/opennl_mesh_smooth
 [ 96%] Linking CXX executable ../../../../bin/manifold_harmonics
 [ 96%] Built target opennl_mesh_smooth
-[ 96%] Built target manifold_harmonics
 [ 96%] Building C object src/examples/geogram/opennl_basic_example/CMakeFiles/opennl_basic_example.dir/main.c.o
+[ 96%] Built target manifold_harmonics
 [ 96%] Building CXX object src/examples/geogram/simple_raytrace/CMakeFiles/simple_raytrace.dir/main.cpp.o
 [ 97%] Linking C executable ../../../../bin/opennl_basic_example
 [ 97%] Built target opennl_basic_example
