@@ -12,8 +12,8 @@
   <line>Command: /home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/bin/compute_CSG /home/runner/work/geogram/geogram/tests/data/CSG/example004.csg</line>
 </preamble>
 
-<pid>6129</pid>
-<ppid>5519</ppid>
+<pid>6681</pid>
+<ppid>6291</ppid>
 <tool>memcheck</tool>
 
 <args>
@@ -41,15 +41,15 @@
 
 <status>
   <state>FINISHED</state>
-  <time>00:00:00:05.610 </time>
+  <time>00:00:00:00.891 </time>
 </status>
 
 <error>
-  <unique>0x2</unique>
+  <unique>0x1</unique>
   <tid>1</tid>
   <kind>Leak_DefinitelyLost</kind>
   <xwhat>
-    <text>112 bytes in 1 blocks are definitely lost in loss record 3 of 7</text>
+    <text>112 bytes in 1 blocks are definitely lost in loss record 2 of 2</text>
     <leakedbytes>112</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -87,288 +87,12 @@
   </stack>
 </error>
 
-<error>
-  <unique>0x4</unique>
-  <tid>1</tid>
-  <kind>Leak_PossiblyLost</kind>
-  <xwhat>
-    <text>320 bytes in 1 blocks are possibly lost in loss record 5 of 7</text>
-    <leakedbytes>320</leakedbytes>
-    <leakedblocks>1</leakedblocks>
-  </xwhat>
-  <stack>
-    <frame>
-      <ip>0x484DA83</ip>
-      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>calloc</fn>
-    </frame>
-    <frame>
-      <ip>0x40147D9</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2</obj>
-      <fn>calloc</fn>
-      <dir>./elf/../include</dir>
-      <file>rtld-malloc.h</file>
-      <line>44</line>
-    </frame>
-    <frame>
-      <ip>0x40147D9</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2</obj>
-      <fn>allocate_dtv</fn>
-      <dir>./elf/../elf</dir>
-      <file>dl-tls.c</file>
-      <line>375</line>
-    </frame>
-    <frame>
-      <ip>0x40147D9</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2</obj>
-      <fn>_dl_allocate_tls</fn>
-      <dir>./elf/../elf</dir>
-      <file>dl-tls.c</file>
-      <line>634</line>
-    </frame>
-    <frame>
-      <ip>0x520C7B4</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/libc.so.6</obj>
-      <fn>allocate_stack</fn>
-      <dir>./nptl/./nptl</dir>
-      <file>allocatestack.c</file>
-      <line>430</line>
-    </frame>
-    <frame>
-      <ip>0x520C7B4</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/libc.so.6</obj>
-      <fn>pthread_create@@GLIBC_2.34</fn>
-      <dir>./nptl/./nptl</dir>
-      <file>pthread_create.c</file>
-      <line>647</line>
-    </frame>
-    <frame>
-      <ip>0x54A725F</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0</obj>
-    </frame>
-    <frame>
-      <ip>0x549DA10</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0</obj>
-      <fn>GOMP_parallel</fn>
-    </frame>
-    <frame>
-      <ip>0x4A75D65</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.9.5-rc</obj>
-      <fn>(anonymous namespace)::detect_bad_facets(GEO::Mesh&amp;, bool, GEO::vector&lt;unsigned long&gt;&amp;, GEO::vector&lt;unsigned long&gt;*, GEO::vector&lt;unsigned long&gt;*, bool)</fn>
-    </frame>
-    <frame>
-      <ip>0x4A7C7E3</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.9.5-rc</obj>
-      <fn>GEO::mesh_remove_bad_facets_no_check(GEO::Mesh&amp;, bool)</fn>
-    </frame>
-    <frame>
-      <ip>0x4AA2BE0</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.9.5-rc</obj>
-      <fn>GEO::MeshSurfaceIntersection::intersect_epilogue(GEO::vector&lt;GEO::IsectInfo&gt; const&amp;)</fn>
-    </frame>
-    <frame>
-      <ip>0x4AA58D3</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.9.5-rc</obj>
-      <fn>GEO::MeshSurfaceIntersection::intersect()</fn>
-    </frame>
-    <frame>
-      <ip>0x49D4102</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.9.5-rc</obj>
-      <fn>GEO::CSGBuilder::do_CSG(GEO::SmartPointer&lt;GEO::CSGMesh&gt;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
-    </frame>
-    <frame>
-      <ip>0x49D5FA2</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.9.5-rc</obj>
-      <fn>GEO::CSGBuilder::difference(std::vector&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt;, std::allocator&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt; &gt; &gt; const&amp;)</fn>
-    </frame>
-    <frame>
-      <ip>0x49D7128</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.9.5-rc</obj>
-      <fn>GEO::CSGCompiler::difference(GEO::CSGCompiler::ArgList const&amp;, std::vector&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt;, std::allocator&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt; &gt; &gt; const&amp;)</fn>
-    </frame>
-  </stack>
-</error>
-
-<error>
-  <unique>0x5</unique>
-  <tid>1</tid>
-  <kind>Leak_PossiblyLost</kind>
-  <xwhat>
-    <text>640 bytes in 2 blocks are possibly lost in loss record 6 of 7</text>
-    <leakedbytes>640</leakedbytes>
-    <leakedblocks>2</leakedblocks>
-  </xwhat>
-  <stack>
-    <frame>
-      <ip>0x484DA83</ip>
-      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>calloc</fn>
-    </frame>
-    <frame>
-      <ip>0x40147D9</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2</obj>
-      <fn>calloc</fn>
-      <dir>./elf/../include</dir>
-      <file>rtld-malloc.h</file>
-      <line>44</line>
-    </frame>
-    <frame>
-      <ip>0x40147D9</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2</obj>
-      <fn>allocate_dtv</fn>
-      <dir>./elf/../elf</dir>
-      <file>dl-tls.c</file>
-      <line>375</line>
-    </frame>
-    <frame>
-      <ip>0x40147D9</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2</obj>
-      <fn>_dl_allocate_tls</fn>
-      <dir>./elf/../elf</dir>
-      <file>dl-tls.c</file>
-      <line>634</line>
-    </frame>
-    <frame>
-      <ip>0x520C7B4</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/libc.so.6</obj>
-      <fn>allocate_stack</fn>
-      <dir>./nptl/./nptl</dir>
-      <file>allocatestack.c</file>
-      <line>430</line>
-    </frame>
-    <frame>
-      <ip>0x520C7B4</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/libc.so.6</obj>
-      <fn>pthread_create@@GLIBC_2.34</fn>
-      <dir>./nptl/./nptl</dir>
-      <file>pthread_create.c</file>
-      <line>647</line>
-    </frame>
-    <frame>
-      <ip>0x495943F</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.9.5-rc</obj>
-      <fn>(anonymous namespace)::PThreadManager::run_concurrent_threads(std::vector&lt;GEO::SmartPointer&lt;GEO::Thread&gt;, std::allocator&lt;GEO::SmartPointer&lt;GEO::Thread&gt; &gt; &gt;&amp;, unsigned long)</fn>
-    </frame>
-    <frame>
-      <ip>0x4952F36</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.9.5-rc</obj>
-      <fn>GEO::Process::run_threads(std::vector&lt;GEO::SmartPointer&lt;GEO::Thread&gt;, std::allocator&lt;GEO::SmartPointer&lt;GEO::Thread&gt; &gt; &gt;&amp;)</fn>
-    </frame>
-    <frame>
-      <ip>0x4956950</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.9.5-rc</obj>
-      <fn>GEO::parallel_for(unsigned long, unsigned long, std::function&lt;void (unsigned long)&gt;, unsigned long, bool)</fn>
-    </frame>
-    <frame>
-      <ip>0x4AA251B</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.9.5-rc</obj>
-      <fn>GEO::MeshSurfaceIntersection::intersect_epilogue(GEO::vector&lt;GEO::IsectInfo&gt; const&amp;)</fn>
-    </frame>
-    <frame>
-      <ip>0x4AA58D3</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.9.5-rc</obj>
-      <fn>GEO::MeshSurfaceIntersection::intersect()</fn>
-    </frame>
-    <frame>
-      <ip>0x49D4102</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.9.5-rc</obj>
-      <fn>GEO::CSGBuilder::do_CSG(GEO::SmartPointer&lt;GEO::CSGMesh&gt;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
-    </frame>
-    <frame>
-      <ip>0x49D5FA2</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.9.5-rc</obj>
-      <fn>GEO::CSGBuilder::difference(std::vector&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt;, std::allocator&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt; &gt; &gt; const&amp;)</fn>
-    </frame>
-    <frame>
-      <ip>0x49D7128</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.9.5-rc</obj>
-      <fn>GEO::CSGCompiler::difference(GEO::CSGCompiler::ArgList const&amp;, std::vector&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt;, std::allocator&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt; &gt; &gt; const&amp;)</fn>
-    </frame>
-    <frame>
-      <ip>0x49CF04C</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.9.5-rc</obj>
-      <fn>GEO::CSGCompiler::parse_instruction()</fn>
-    </frame>
-  </stack>
-</error>
-
-<error>
-  <unique>0x6</unique>
-  <tid>1</tid>
-  <kind>Leak_StillReachable</kind>
-  <xwhat>
-    <text>2,240 bytes in 1 blocks are still reachable in loss record 7 of 7</text>
-    <leakedbytes>2240</leakedbytes>
-    <leakedblocks>1</leakedblocks>
-  </xwhat>
-  <stack>
-    <frame>
-      <ip>0x484E120</ip>
-      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>memalign</fn>
-    </frame>
-    <frame>
-      <ip>0x54968E8</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0</obj>
-    </frame>
-    <frame>
-      <ip>0x54A6C96</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0</obj>
-    </frame>
-    <frame>
-      <ip>0x549D9F9</ip>
-      <obj>/usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0</obj>
-      <fn>GOMP_parallel</fn>
-    </frame>
-    <frame>
-      <ip>0x4A75D65</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.9.5-rc</obj>
-      <fn>(anonymous namespace)::detect_bad_facets(GEO::Mesh&amp;, bool, GEO::vector&lt;unsigned long&gt;&amp;, GEO::vector&lt;unsigned long&gt;*, GEO::vector&lt;unsigned long&gt;*, bool)</fn>
-    </frame>
-    <frame>
-      <ip>0x4A7C7E3</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.9.5-rc</obj>
-      <fn>GEO::mesh_remove_bad_facets_no_check(GEO::Mesh&amp;, bool)</fn>
-    </frame>
-    <frame>
-      <ip>0x4AA2BE0</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.9.5-rc</obj>
-      <fn>GEO::MeshSurfaceIntersection::intersect_epilogue(GEO::vector&lt;GEO::IsectInfo&gt; const&amp;)</fn>
-    </frame>
-    <frame>
-      <ip>0x4AA58D3</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.9.5-rc</obj>
-      <fn>GEO::MeshSurfaceIntersection::intersect()</fn>
-    </frame>
-    <frame>
-      <ip>0x49D4102</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.9.5-rc</obj>
-      <fn>GEO::CSGBuilder::do_CSG(GEO::SmartPointer&lt;GEO::CSGMesh&gt;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
-    </frame>
-    <frame>
-      <ip>0x49D5FA2</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.9.5-rc</obj>
-      <fn>GEO::CSGBuilder::difference(std::vector&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt;, std::allocator&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt; &gt; &gt; const&amp;)</fn>
-    </frame>
-    <frame>
-      <ip>0x49D7128</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.9.5-rc</obj>
-      <fn>GEO::CSGCompiler::difference(GEO::CSGCompiler::ArgList const&amp;, std::vector&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt;, std::allocator&lt;GEO::SmartPointer&lt;GEO::CSGMesh&gt; &gt; &gt; const&amp;)</fn>
-    </frame>
-    <frame>
-      <ip>0x49CF04C</ip>
-      <obj>/home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/lib/libgeogram.so.1.9.5-rc</obj>
-      <fn>GEO::CSGCompiler::parse_instruction()</fn>
-    </frame>
-  </stack>
-</error>
-
 <errorcounts>
 </errorcounts>
 
 <suppcounts>
   <pair>
-    <count>3</count>
+    <count>1</count>
     <name>Vorpaline_gomp_64bits_leak_2</name>
   </pair>
 </suppcounts>
