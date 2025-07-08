@@ -12,8 +12,8 @@
   <line>Command: /home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/bin/test_geofile</line>
 </preamble>
 
-<pid>15601</pid>
-<ppid>11208</ppid>
+<pid>15633</pid>
+<ppid>11223</ppid>
 <tool>memcheck</tool>
 
 <args>
@@ -40,7 +40,7 @@
 
 <status>
   <state>FINISHED</state>
-  <time>00:00:41:45.922 </time>
+  <time>00:00:41:42.791 </time>
 </status>
 
 <error>
