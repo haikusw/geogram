@@ -12,8 +12,8 @@
   <line>Command: /home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/bin/intersect remove_internal_shells=true /home/runner/work/geogram/geogram/tests/data/Intersections/cube_with_8_spheres.obj</line>
 </preamble>
 
-<pid>15469</pid>
-<ppid>11354</ppid>
+<pid>15451</pid>
+<ppid>11311</ppid>
 <tool>memcheck</tool>
 
 <args>
@@ -42,7 +42,7 @@
 
 <status>
   <state>FINISHED</state>
-  <time>00:00:01:16.785 </time>
+  <time>00:00:01:15.535 </time>
 </status>
 
 <error>
